@@ -24,7 +24,7 @@ Header.defaultProps = {
 Header.propTypes = {
     title: PropTypes.string.isRequired,
     color: PropTypes.string,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
     text: PropTypes.string
 }
 
