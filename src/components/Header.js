@@ -10,10 +10,9 @@ const Header = ({title }) => {
   return (
     <header className = 'header'>
         <h1> {title}</h1>
-        <Button color = 'black' text='Add'onClick=
+        <Button color = 'green' text='Add'onClick=
         {onClick}
         />
-    
     </header>
   )
 }
@@ -24,6 +23,9 @@ Header.defaultProps = {
 
 Header.propTypes = {
     title: PropTypes.string.isRequired,
+    color: PropTypes.string,
+    onClick: PropTypes.func.isRequired,
+    text: PropTypes.string
 }
 
 export default Header
